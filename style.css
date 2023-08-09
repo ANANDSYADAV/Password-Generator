@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.BODY {
+  background: Beige;
+}
+
+.container {
+  width: 80vw;
+  background: AliceBlue;
+  margin-left: 10%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-decoration-color: red;
+}
+
+pre {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  height: 50px;
+  border: white 2px solid;
+  border-radius: 10px;
+  font-size: 25px;
+  background: green;
+  padding: 5px;
+  margin: 5px 10px;
+  color: white;
+}
+
+button:hover {
+  color: black;
+  background: yellow;
+}
+
+#passwordhold {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 25px;
+  padding-left: 10px;
+  background: pink;
+  color: black;
+}
