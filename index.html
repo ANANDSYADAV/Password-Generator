@@ -9,8 +9,8 @@
 </head>
 
 <body class="BODY">
-  <div class="container">
-    <pre>Let me generate your password!</pre>
+  <div id="container">
+    <p>Let me generate your password!</p>
     <br> <br>
     <div>
       <h1>User Guide</h1>
@@ -27,15 +27,21 @@
         Button will lead to the appearance of a number of Prompt Boxes asking for several specification needed in the
         password.
       </h2>
+
+      <br>
+
+      <h1>
+        Lets generate 😁
+      </h1>
     </div>
-    <button type="button" id="RGbtn" onclick="Randomfunc()">Random Generator</button>
-    <button value="button" id="CGbtn" onclick="Customfunc()">Customised Generator</button>
+    <div id="button-holder">
+      <button type="button" id="RGbtn" onclick="Randomfunc()">Random Generator</button>
+      <button value="button" id="CGbtn" onclick="Customfunc()">Customised Generator</button>
+    </div>
     <br> <br>
     <div id="passwordhold"></div>
-    <script src="script.js"></script>
   </div>
-
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
