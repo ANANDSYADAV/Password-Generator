@@ -7,17 +7,21 @@ html {
   background: Beige;
 }
 
-.container {
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 80vw;
   background: AliceBlue;
-  margin-left: 10%;
+  margin: auto;
   align-items: center;
+  justify-content: center;
   align-content: center;
   align-self: center;
   text-decoration-color: red;
 }
 
-pre {
+p {
   font-size: 50px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -28,9 +32,8 @@ button {
   border-radius: 10px;
   font-size: 25px;
   background: green;
-  padding: 5px;
-  margin: 5px 10px;
   color: white;
+  min-width: 252px;
 }
 
 button:hover {
@@ -45,4 +48,51 @@ button:hover {
   padding-left: 10px;
   background: pink;
   color: black;
+}
+
+@media screen and (width <=650px) and (width > 390px) {
+  button {
+    width: 270px;
+  }
+
+  #button-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #container {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+#passwordhold {
+  font-weight: 800;
+}
+
+@media screen and (width <=390px) and (width > 270px) {
+  #container {
+    width: 90vw;
+    margin: auto;
+  }
+
+  button {
+    width: 100px;
+    height: 70px;
+  }
+}
+
+@media screen and (width <=270px) {
+  #container {
+    width: 98vw;
+    margin: auto;
+  }
+
+  button {
+    width: 60px;
+    height: 70px;
+  }
 }
