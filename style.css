@@ -5,6 +5,7 @@ html {
 
 .BODY {
   background: AliceBlue;
+  height: 90vh;
 }
 
 #container {
@@ -48,6 +49,10 @@ button:hover {
   padding-left: 10px;
   background: pink;
   color: black;
+  margin-bottom: 10px;
+  font-weight: 800;
+  display: none;
+  word-wrap: break-word;
 }
 
 @media screen and (width <=650px) and (width > 390px) {
@@ -67,10 +72,6 @@ button:hover {
     width: 80vw;
     margin: auto;
   }
-}
-
-#passwordhold {
-  font-weight: 800;
 }
 
 @media screen and (width <=390px) and (width > 270px) {
