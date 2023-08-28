@@ -1,5 +1,5 @@
-
 let hold = document.getElementById("passwordhold");
+
 function Randomfunc() {
   let parent = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
   let len = parent.length;
@@ -9,6 +9,7 @@ function Randomfunc() {
     var index = Math.floor(Math.random() * len);
     password += parent[index];
   }
+  hold.style.display = "block";
   hold.innerHTML = "Random Generated Password => " + password;
 }
 
@@ -58,5 +59,6 @@ function Customfunc() {
     password += special_characters[index];
   }
   password = shuffle(password);
+  hold.style.display = "block";
   hold.innerHTML = "Custom Generated Password => " + password;
 }
