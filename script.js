@@ -1,4 +1,5 @@
 let hold = document.getElementById("passwordhold");
+let btn = document.getElementById("btn");
 
 function Randomfunc() {
   let parent = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
@@ -9,8 +10,9 @@ function Randomfunc() {
     var index = Math.floor(Math.random() * len);
     password += parent[index];
   }
-  hold.style.display = "block";
-  hold.innerHTML = "Random Generated Password => " + password;
+  // hold.innerHTML = "Random Generated Password => " + password;
+  hold.value = password;
+  btn.style.display = "block";
 }
 
 function shuffle(password) {
@@ -59,6 +61,14 @@ function Customfunc() {
     password += special_characters[index];
   }
   password = shuffle(password);
-  hold.style.display = "block";
-  hold.innerHTML = "Custom Generated Password => " + password;
+  // hold.innerHTML = "Custom Generated Password => " + password;
+  hold.value = password;
+  btn.style.display = "block";
+}
+
+function copypassword() {
+  var cpass = document.getElementById("passwordhold");
+  cpass.select();
+  document.execCommand("copy");
+  alert("Copied the password: " + cpass.value);
 }
