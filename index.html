@@ -11,36 +11,39 @@
 <body class="BODY">
   <div id="container">
     <p>Let me generate your password!</p>
-    <br>
-    <div>
-      <h1>User Guide</h1>
-      <h2>As we all know that generating a strong paasword is very important to secure our profile in today's world.
-        Here
-        we
-        have given Two options of password generation-
-        <br>
-        1) Random Generator - It will generate a random password of appropriate length given by the user. Clicking on
-        the
-        Random Generator Button will lead to the appearance of a Prompt Box asking for the length of password needed.
-        <br>
-        2) Customised Generator - It will generate a custom password for the user. Clicking on the Customised Generator
-        Button will lead to the appearance of a number of Prompt Boxes asking for several specification needed in the
-        password.
+    <div class="guide">
+      <h1 style="font-weight: 900; color:blue"> <span>User Guide</span></h1>
+      <h2>As we all know, generating a strong password is very important to secure our profile in today's world. Here,
+        have given two options for password generation:
+        <br> <br>
+        1) <span>Random Generator
+        </span> - It will generate a random password of the appropriate length given by the user. Clicking on the
+        Random Generator button will lead to the appearance of a prompt asking for the length of
+        the password needed.
+        <br> <br>
+        2) <span>Customised Generator</span> - It will generate a custom password for the user. Clicking on the
+        Customised Generator button will lead to the appearance of a number of prompts asking for several specifications
+        needed in the password.
       </h2>
 
       <br>
 
-      <h1>
+      <h1 id="generate">
         Lets generate 😁
       </h1>
+      <br>
     </div>
     <div id="button-holder">
       <button type="button" id="RGbtn" onclick="Randomfunc()">Random Generator</button>
       <button value="button" id="CGbtn" onclick="Customfunc()">Customised Generator</button>
     </div>
     <br> <br>
-    <div id="passwordhold"></div>
+    <div id="result">
+      <input type="text" id="passwordhold" placeholder="Password">
+      <button id="btn" onclick="copypassword()">Copy</button>
+    </div>
   </div>
+  <br>
   <script src="script.js"></script>
 </body>
 
